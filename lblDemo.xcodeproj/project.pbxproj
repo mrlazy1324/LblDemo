@@ -14,6 +14,7 @@
 		386122941AB304F700BDEF0A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 386122931AB304F700BDEF0A /* Images.xcassets */; };
 		386122971AB304F700BDEF0A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 386122951AB304F700BDEF0A /* LaunchScreen.xib */; };
 		386122A31AB304F700BDEF0A /* lblDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 386122A21AB304F700BDEF0A /* lblDemoTests.m */; };
+		B2FE14E21BFB49660062CEBE /* lblDemo.podspec in Resources */ = {isa = PBXBuildFile; fileRef = B2FE14E11BFB49660062CEBE /* lblDemo.podspec */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		3861229C1AB304F700BDEF0A /* lblDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = lblDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		386122A11AB304F700BDEF0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		386122A21AB304F700BDEF0A /* lblDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = lblDemoTests.m; sourceTree = "<group>"; };
+		B2FE14E11BFB49660062CEBE /* lblDemo.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = lblDemo.podspec; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 		3861227A1AB304F700BDEF0A = {
 			isa = PBXGroup;
 			children = (
+				B2FE14E01BFB49450062CEBE /* Pod Config */,
 				386122851AB304F700BDEF0A /* lblDemo */,
 				3861229F1AB304F700BDEF0A /* lblDemoTests */,
 				386122841AB304F700BDEF0A /* Products */,
@@ -82,12 +85,12 @@
 			isa = PBXGroup;
 			children = (
 				3861228A1AB304F700BDEF0A /* AppDelegate.h */,
-				3861228B1AB304F700BDEF0A /* AppDelegate.m */,
 				3861228D1AB304F700BDEF0A /* ViewController.h */,
+				3861228B1AB304F700BDEF0A /* AppDelegate.m */,
 				3861228E1AB304F700BDEF0A /* ViewController.m */,
-				386122901AB304F700BDEF0A /* Main.storyboard */,
 				386122931AB304F700BDEF0A /* Images.xcassets */,
 				386122951AB304F700BDEF0A /* LaunchScreen.xib */,
+				386122901AB304F700BDEF0A /* Main.storyboard */,
 				386122861AB304F700BDEF0A /* Supporting Files */,
 			);
 			path = lblDemo;
@@ -117,6 +120,14 @@
 				386122A11AB304F700BDEF0A /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B2FE14E01BFB49450062CEBE /* Pod Config */ = {
+			isa = PBXGroup;
+			children = (
+				B2FE14E11BFB49660062CEBE /* lblDemo.podspec */,
+			);
+			name = "Pod Config";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,6 +212,7 @@
 			files = (
 				386122921AB304F700BDEF0A /* Main.storyboard in Resources */,
 				386122971AB304F700BDEF0A /* LaunchScreen.xib in Resources */,
+				B2FE14E21BFB49660062CEBE /* lblDemo.podspec in Resources */,
 				386122941AB304F700BDEF0A /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -412,6 +424,7 @@
 				386122A81AB304F700BDEF0A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		386122A91AB304F700BDEF0A /* Build configuration list for PBXNativeTarget "lblDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +433,7 @@
 				386122AB1AB304F700BDEF0A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

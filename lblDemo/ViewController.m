@@ -14,14 +14,57 @@
 
 @implementation ViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
 }
 
-- (void)didReceiveMemoryWarning {
+- (void)didReceiveMemoryWarning
+{
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
+-(void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    
+    self.lblnname.userInteractionEnabled = YES;
+    
+    UITapGestureRecognizer *tapGesture =[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(labelTap)];
+    [self.lblnname addGestureRecognizer:tapGesture];
+    
+    self.txtLabel.hidden = YES;
+}
+
+
+-(void)labelTap
+{
+    self.txtLabel.hidden = NO;
+    self.txtLabel.text = self.lblnname.text;
+    self.lblnname.hidden = YES;
+    [self.txtLabel setKeyboardType:UIKeyboardTypePhonePad];
+}
+
+
+- (IBAction)Ok:(id)sender
+{
+    self.lblnname.text = self.txtLabel.text;
+    
+    self.lblnname.hidden = NO;
+    self.txtLabel.hidden = YES;
+}
+
+//Cpoy,past,select disable code
+//            |
+//            |
+//            |
+//- (BOOL)canPerformAction:(SEL)action withSender:(id)sender {
+//    [[NSOperationQueue mainQueue] addOperationWithBlock:^{
+//        [[UIMenuController sharedMenuController] setMenuVisible:NO animated:NO];
+//    }];
+//    return [super canPerformAction:action withSender:sender];
+//}
 @end
+
+
+
